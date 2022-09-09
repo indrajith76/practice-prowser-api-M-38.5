@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Level - 3</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+      <main class="container">
+            <section>
+                  <h3>Name : <span id="displayName"></span></h3>  
+                  <h3>Email : <span id="displayEmail"></span></h3>
+                  <h3>Message : <span id="displayMessage"></span></h3>
+            </section>
+            <section class="bg-success container w-75  pt-5 pb-5 mt-5 rounded text-white">
+                  <h3 class="text-white text-center">Please Contact me</h3>
+                  <div class="row gap-4">
+                        <div class="col-12 d-flex gap-2 justify-content-center">
+                              <label  class="form-label" for="name">Name</label>
+                              <input class="form-control w-50" id="name" type="text">
+                              <button onclick="deleteName()" id="delele-name" class="btn btn-danger">Delete Name</button>
+                              <button onclick="saveName()" id="send-name" class="btn btn-danger">Send Name</button>
+                        </div>
+                        <div class="col-12 d-flex gap-2 justify-content-center">
+                              <label  class="form-label" for="email">Email</label><br>
+                              <input class="form-control w-50" id="email" type="text">
+                              <button onclick="deleteEmail()" class="btn btn-danger">Delete Email</button>
+                              <button onclick="saveEmail()" class="btn btn-danger">Send Email</button>
+                        </div>
+                        <div class="col-12 d-flex gap-2 justify-content-center">
+                              <label class="form-label" for="message">Message</label><br>
+                              <textarea class="form-control w-50" id="message"></textarea>
+                              <button onclick="deleteMessage()" class="btn btn-danger" style="height: 60px;">Delete Message</button>
+                              <button onclick="saveMessage()" class="btn btn-danger" style="height: 60px;">Send Message</button>
+                        </div>
+                        <div class="col d-flex  gap-3 justify-content-center">
+                              <button onclick="sendAll()" id="send-all" class="btn btn-primary"><h3>Send</h1></button>
+                              <button onclick="reset()" id="reset" class="btn btn-warning"><h3>Reset</h3></button>
+                        </div>
+                  </div>
+            </section>
+      </main>
+
+      <script src="index.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
